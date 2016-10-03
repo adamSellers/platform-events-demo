@@ -13,6 +13,11 @@ router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Salesforce Platform Events <-> Heroku Demo' });
 });
 
+/* GET home page. */
+router.get('/order', function(req, res, next) {
+	res.render('order', { title: 'Salesforce New Order' });
+});
+
 /* Creates a new the record */
 router.post('/', function(req, res, next) {
 	console.log('In router post');
