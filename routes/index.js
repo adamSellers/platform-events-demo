@@ -23,6 +23,8 @@ router.post('/', function(req, res, next) {
 	newEvent.set('Total_Amount__c', req.body.totalAmount);  
 
 	org.org.insert({ sobject: newEvent })
+
+	res.sendStatus(200);
   
 });
 
