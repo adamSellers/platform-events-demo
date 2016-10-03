@@ -13,9 +13,14 @@ router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Salesforce Platform Events <-> Heroku Demo' });
 });
 
-/* GET home page. */
+/* GET order page. */
 router.get('/order', function(req, res, next) {
 	res.render('order', { title: 'Salesforce New Order' });
+});
+
+/* GET order wip page. */
+router.get('/event', function(req, res, next) {
+	res.render('event', { title: 'Salesforce New Order' });
 });
 
 /* Creates a new the record */
