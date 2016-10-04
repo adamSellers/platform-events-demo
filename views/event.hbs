@@ -65,9 +65,16 @@
                             </div>
                         </div>
                     </div>
-                    <button class="slds-button slds-button--brand slds-m-top--medium" id="createBtn" type="submit">
-                        Create
-                        Customer Order
+                    <button class="slds-button slds-button--brand slds-m-top--medium" id="createBtn" type="submit"
+                            aria-live="assertive">
+                            <span class="slds-text-not-selected">
+                            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+                            </svg>Submit</span>
+                            <span class="slds-text-selected">
+                            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>Submitted</span>
                     </button>
                 </form>
             </fieldset>
