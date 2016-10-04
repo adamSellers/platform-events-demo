@@ -1,72 +1,76 @@
 <body>
-
-<div class="slds-p-horizontal--small">
-    <div class="slds-page-header" role="banner">
-        <div class="slds-grid slds-container--small slds-container--center">
-            <div class="slds-col--padded">
-                <div class="slds-media">
-                    <div class="slds-media__figure">
-                        <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-88">
-                            <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom88"></use>
-                        </svg>
-                    </div>
-                    <div class="slds-media__body">
-                        <p class="slds-text-heading--label">Customer Order</p>
-                        <h1 class="slds-text-heading--medium">New Customer Order</h1>
+<div id='platform-events-node' class='slds-grid slds-wrap slds-container--small slds-container--center'>
+    <div class="slds-p-horizontal--small">
+        <div class="slds-page-header" role="banner">
+            <div class="slds-grid slds-container--small slds-container--center">
+                <div class="slds-col--padded">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-88">
+                                <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom88"></use>
+                            </svg>
+                        </div>
+                        <div class="slds-media__body">
+                            <p class="slds-text-heading--label">Customer Order</p>
+                            <h1 class="slds-text-heading--medium">New Customer Order</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div aria-labelledby="newpieform">
-        <fieldset class="slds-box slds-theme--default">
-            <form class="slds-form--stacked">
-                <div class="slds-grid slds-container--small slds-container--center">
-                    <div class="slds-col--padded">
-                        <div class="slds-theme--shade slds-text-align--left">
-                            <div class="slds-form-element slds-is-required">
-                                <label class="slds-form-element__label" for="customerId">Account Name</label>
-                                <div class="slds-form-element__control">
-                                    <select name="customerId" id="customerId" class="slds-select" required>
-                                        <option value="0100000002">DelBont Industries</option>
-                                        <option value="0100000004">Panorama Studios</option>
-                                        <option value="0100000005">TECUM</option>
-                                        <option value="0100000006">Asia High Tech</option>
-                                        <option value="0100000008">AVANTEL</option>
-                                    </select>
-                                </div>
+        <div aria-labelledby="newpieform">
+            <fieldset class="slds-box slds-theme--default">
+                <form class="slds-form--stacked">
+                    <div class="slds-grid slds-container--small slds-container--center">
+                        <div class="slds-col--padded">
+                            <div class="slds-theme--shade slds-text-align--left">
                                 <div class="slds-form-element slds-is-required">
-                                    <label class="slds-form-element__label" for="productName">Product Name</label>
+                                    <label class="slds-form-element__label" for="customerId">Account Name</label>
                                     <div class="slds-form-element__control">
-                                        <select name="productName" id="productName" class="slds-select" required>
-                                            <option>Wonderful Widgets</option>
-                                            <option>Spectacular Sprockets</option>
-                                            <option>Terrific Thingamajigs</option>
+                                        <select name="customerId" id="customerId" class="slds-select" required>
+                                            <option value="0100000002">DelBont Industries</option>
+                                            <option value="0100000004">Panorama Studios</option>
+                                            <option value="0100000005">TECUM</option>
+                                            <option value="0100000006">Asia High Tech</option>
+                                            <option value="0100000008">AVANTEL</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="slds-form-element slds-is-required">
-                                    <label class="slds-form-element__label" for="numberOfUnits">Number of Units</label>
-                                    <div class="slds-form-element__control">
-                                        <input name="numberOfUnits" id="numberOfUnits" class="slds-input" type="number"
-                                               required maxlength="10"/>
+                                    <div class="slds-form-element slds-is-required">
+                                        <label class="slds-form-element__label" for="productName">Product Name</label>
+                                        <div class="slds-form-element__control">
+                                            <select name="productName" id="productName" class="slds-select" required>
+                                                <option>Wonderful Widgets</option>
+                                                <option>Spectacular Sprockets</option>
+                                                <option>Terrific Thingamajigs</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="slds-form-element slds-is-required">
-                                    <label class="slds-form-element__label" for="totalAmount">Total Amount</label>
-                                    <div class="slds-form-element__control">
-                                        <input name="totalAmount" id="totalAmount" class="slds-input" type="number"
-                                               required/>
+                                    <div class="slds-form-element slds-is-required">
+                                        <label class="slds-form-element__label" for="numberOfUnits">Number of
+                                            Units</label>
+                                        <div class="slds-form-element__control">
+                                            <input name="numberOfUnits" id="numberOfUnits" class="slds-input"
+                                                   type="number"
+                                                   required maxlength="10"/>
+                                        </div>
+                                    </div>
+                                    <div class="slds-form-element slds-is-required">
+                                        <label class="slds-form-element__label" for="totalAmount">Total Amount</label>
+                                        <div class="slds-form-element__control">
+                                            <input name="totalAmount" id="totalAmount" class="slds-input" type="number"
+                                                   required/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <button class="slds-button slds-button--brand slds-m-top--medium" id="createBtn" type="submit">Create
-                    Customer Order
-                </button>
-            </form>
-        </fieldset>
+                    <button class="slds-button slds-button--brand slds-m-top--medium" id="createBtn" type="submit">
+                        Create
+                        Customer Order
+                    </button>
+                </form>
+            </fieldset>
+        </div>
     </div>
 </div>
